@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculation of Percentage using Object</title>
+</head>
+<body>
+    <script>
+        var marks={
+            telugu:95,
+            hindi:92,
+            english:90,
+            maths:91,
+            science:93,
+            social:95,
+            totalMarks:function(){
+                return("total:",marks.telugu+marks.hindi+marks.english+marks.maths+marks.science+marks.social)
+            },
+            percentage:function(){
+                 return(this.totalMarks()/6)
+            }
+        }
+        console.log(marks.totalMarks());
+        console.log(marks.percentage());
+    </script>
+    
+</body>
+</html>

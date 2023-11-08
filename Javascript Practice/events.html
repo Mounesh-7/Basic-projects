@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+</head>
+<body>
+    <label>Name:</label>
+    <input type="text" id="name" value="">
+    <button id="p1">Change</button>
+    Username:<input type="text" id="username" onblur="blurEvent()"><br><br>
+    Text:<input type="text" id="jeshu" onblur="changeEvent()">
+    <script>
+        var button = document.getElementById("name");
+        button.onmouseout = change;
+        function change(){
+            document.body.style.backgroundColor = "yellow"
+        }
+     </script>
+     <script>
+        function blurEvent(){
+            var username = document.getElementById("username");
+            console.log(username.value)
+        }
+     </script>
+          <script>
+            function changeEvent(){
+                var Mounesh = document.getElementById("jeshu");
+                console.log(Mounesh.value)
+            }
+         </script>
+    
+</body>
+</html>

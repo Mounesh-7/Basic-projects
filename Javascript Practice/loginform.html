@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    
+    <style>
+        .para{
+            margin: 100px;
+            padding: 10px;
+            background-color: blue;
+            color: orange;
+            text-align:justify;
+            width: 50%;
+            font-size: x-large;
+
+        }
+    </style>
+   
+</head>
+
+<body>
+
+    <div class="para">
+        <h2 style="text-align: center;">Registration Form</h2>
+        <label>Username : </label>
+        <input type="text" value="" id="username"><br><br>
+        <label>Password : </label>
+        <input type="password" value="" id="password"><br><br>
+        <label>Mobile-Number : </label>
+        <input type="number" value="" id="number"><br><br>
+        <label>Date-of-Birth : </label>
+        <input type="date" value="" id="Date of Birth"><br><br>
+        <label>Gender : </label>
+        <input type="text" value="" id="gender"><br><br>
+        <input type="radio" value="" id="gender">Male
+        <input type="radio" value="" id="gender">Female<br><br>
+        <input type="button" value="Sign Up" onclick="SignUp()"/>
+    </div>
+    <script>
+         function SignUp(){
+            var username = document.getElementById("username")
+            var Password = document.getElementById("password")
+            var Number = document.getElementById("number")
+            var Date = document.getElementById("Date of Birth")
+            var gender = document.getElementById("gender")
+            console.log(username.value);
+            console.log(password.value);
+            console.log(number.value);
+            console.log(Date.value);
+            console.log(gender.value);
+        }
+    </script>
+       
+    
+        
+    
+    
+</body>
+
+</html>

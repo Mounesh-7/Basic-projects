@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+    var jeshu = {
+        name:"Jeshwanth",
+        age:13,
+        school:"Kasturi",
+        surname:"Kamsali",
+        fullname:function(){
+            return(this.name+this.surname)
+        },
+        write:function(){
+            console.log(this.name+" "+"writes Good.")
+        }
+    }
+    console.log(jeshu.fullname())
+    jeshu.write()
+
+    console.log("Using ES6 classes and objects")
+    class person{
+        constructor(name,age,gender){
+            this.name = name
+            this.age = age
+            this.gender = gender
+        }
+        write(){
+            console.log("write")
+        }
+        read(){
+            console.log("Read")
+        }
+        speak(){
+            console.log("speak")
+        }
+    }
+    var person1 = new person("Mounesh",23,"Male")
+    var person2 = new person("Jeshu",13,"Male")
+    var person3 = new person("Krishna",46,"Male")
+    console.log(person1.name)
+    console.log(person1)
+    console.log(person2.age)
+</script>   
+</body>
+
+</html>

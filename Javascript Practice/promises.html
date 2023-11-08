@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #task{
+            text-align: center;
+            margin-left: 100px;
+            margin-top: 100px;
+            margin-bottom: 100px;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <fieldset>
+        <legend>Port</legend>
+        <form action="">
+            <input type="text" id="task" placeholder="add-text">
+            <input type="button" id="task-bar" value="sumbit">
+        </form>
+               
+
+    </fieldset>
+   
+    
+    <script>
+        let promise = new Promise((resolve,reject)=>{
+            setTimeout(()=>{
+                resolve("Success")
+            },3000)
+
+        })   
+    
+
+        promise.then((res)=>{
+            console.log(res)
+        })
+        promise.catch((err)=>{
+            console.log("Bye Bye")
+        })
+
+        console.log(promise)
+
+        console.log("Using Async Await")
+        async function APIcall(){
+            let response = await promise;
+            console.log(response)
+        }
+ 
+
+    </script>
+</body>
+</html>

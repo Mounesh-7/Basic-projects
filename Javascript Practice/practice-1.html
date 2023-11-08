@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+var arr=[1,2,4]
+function avg(){
+    a = arr[0]+arr[1]+arr[2]
+    console.log("avg"+"="+" "+a/3)
+}
+
+
+function callBack()
+{
+    console.log("Hello Mounesh")
+}
+
+function abc(a,b,val){
+   val()
+}
+console.log(2,3,callBack)
+
+function cdf(){
+    console.log("Mounesh")
+}
+console.log("jeshu")
+console.log("Nirmala")
+let xyz=setTimeout(cdf,1000)
+
+function clear(){
+    clearTimeout(xyz)
+}
+setTimeout(clear(),2000)
+
+
+
+</script>
+    
+</body>
+</html>

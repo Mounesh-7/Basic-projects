@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="change">Hello Goodmorning</h1>
+    <button type="submit" onclick="Submit()">Submit</button>
+    
+<script>
+    function Submit(){
+        var changed = document.getElementById("change").innerHTML = "Good Afternoon";
+        alert(changed)
+
+    }
+console.log("Mounesh")
+console.log("Jeshu")
+var a = setTimeout(() => {
+    console.log("Nirmala")
+}, 2000);
+console.log("Krishna")
+clearTimeout(a)
+  
+var car={
+    color:"White",
+    company:"Audi",
+    height:"Normal",
+    speed:function(){
+        return(car.company+"is Very Costly and color"+" "+car.color)
+    }
+}
+console.log(car.company)
+console.log(car.speed())
+</script>
+</body>
+</html>

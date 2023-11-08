@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="para">Mounesh</p>
+    <img src="jagan.jpg" alt="Jeshu Bhai" id="image">
+
+<script>
+    document.getElementById("para").style.color="blue";
+    document.getElementById("image").alt="Mounesh Bhai"
+     
+    var person={
+        name:"Mounesh",
+        age :23,
+        brother:"jeshu",
+        surname:"Kamsali",
+        fullname:function(){
+            return(this.name+this.surname+"brother is"+this.brother);
+        }
+    }
+    console.log(person.fullname());
+
+</script>
+<script>
+
+   
+    var a = function percentage(a,c,e){
+       result = (a+c+e)/3;
+       return result;
+    }
+    console.log(a(90,100,80))
+    console.log( a(100,100,90)) 
+   
+</script>
+<script>
+    var b ={name:"Jeshwanth", age:100, height:5, brother:"Mounesh"}
+    console.log(b.name+"is a bad boy and"+" "+b.brother+"is Intelligent Fellow")
+</script>
+<script>
+    let x =["Mounesh",22,"Jeshu"]
+    console.log(x.slice(-3,0))
+    console.log(x)
+
+
+    
+</script>
+    
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classes and Objects</title>
+</head>
+<body>
+    <script>
+        class student{
+            constructor(name,rollno,Yop){
+                this.name=name
+                this.rollno=rollno
+                this.Yop=Yop
+                                      
+            }
+            walk(){
+                console.log("Walking")
+            }
+            eat(){
+                console.log(this.name+" "+"eating")
+            }
+            write()
+            {
+                console.log("writing")
+            }
+        }
+        let student1 = new student("Jeshu",3E1,2023)
+        let student2 = new student("Mounesh",3E0,2023)
+        console.log(student1.name)
+        student2.walk()
+        student1.eat()
+        student2.eat()
+
+        console.log("Topic on the Inhertance")
+        class person{
+            constructor(fullname,rollno){
+                this.fullname = fullname;
+                this.rollno = rollno;
+            }
+            speak(){
+                console.log("speaks English")
+            }
+            write(){
+                console.log("writes English")
+            }
+        }
+        class marks extends person{
+            constructor(fullname,rollno,age){
+                super(fullname,rollno);
+                this.age = age;
+            }
+            tell(){
+                console.log(this.speak() +"every task")
+            }
+        }
+        let marks1 = new marks("Kamsali Mounesh",24,95)
+        
+        marks1.speak()
+        console.log(marks1.fullname)
+        marks1.tell()
+       
+      
+    </script>
+    
+</body>
+</html>
